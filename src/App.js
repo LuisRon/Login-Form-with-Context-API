@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import Form from "./Form";
 import PageContent from './PageContent';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 
-class App extends Component {
-  render() {
+export default function App (props) {
     return (
       <ThemeProvider>
         <LanguageProvider>
@@ -18,6 +17,3 @@ class App extends Component {
       </ThemeProvider>
     );
   }
-}
-
-export default App;
